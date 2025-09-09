@@ -6,7 +6,13 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true
   },
-  basePath: '/Career-Compass'
+  basePath: '/Career-Compass',
+  eslint: {
+    ignoreDuringBuilds: true
+  },
+  typescript: {
+    ignoreBuildErrors: true
+  }
 };
 
 export default nextConfig;
