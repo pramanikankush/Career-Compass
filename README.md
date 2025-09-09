@@ -91,10 +91,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Thanks to all the open-source libraries and APIs used
 - Special thanks to the YouTube creators for educational content links
 
-## 📞 Support
-
-For support or questions, reach out at: support@careercompass.com
-
 ---
 
 **Note**: This is a demo application. Please ensure you have proper API keys and follow rate limits when using in production.
