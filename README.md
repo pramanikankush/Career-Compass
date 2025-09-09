@@ -11,9 +11,6 @@ A comprehensive career development platform built with Next.js, featuring AI-pow
 - **🎯 Interview Prep** - Curated resources for technical and behavioral interviews
 - **🔐 Secure Authentication** - Powered by Clerk
 
-## 🚀 Live Demo
-
-Try the app: [Career Compass Demo](your-deployment-url)
 
 ## 🎥 Demo Video
 
