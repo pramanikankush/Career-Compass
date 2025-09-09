@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Career Compass 🧭
 
-## Getting Started
+A comprehensive career development platform built with Next.js, featuring AI-powered resume analysis, job search, interview preparation, and resume building tools.
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **🏠 Smart Dashboard** - Personalized daily focus topics and progress tracking
+- **💼 Job Search** - Real-time job listings with AI matching
+- **📄 Resume Analyzer** - AI-powered ATS score analysis and improvement suggestions
+- **🏗️ Resume Builder** - Professional resume templates with real-time preview
+- **🎯 Interview Prep** - Curated resources for technical and behavioral interviews
+- **🔐 Secure Authentication** - Powered by Clerk
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Live Demo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Try the app: [Career Compass Demo](your-deployment-url)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tech Stack
 
-## Learn More
+- **Frontend**: Next.js 14, React, TypeScript, Tailwind CSS
+- **Authentication**: Clerk
+- **Database**: Supabase
+- **AI**: Google Gemini API
+- **Deployment**: Vercel
+- **Styling**: Framer Motion for animations
 
-To learn more about Next.js, take a look at the following resources:
+## 🔧 Setup Instructions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/career-compass.git
+   cd career-compass
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-## Deploy on Vercel
+3. **Environment Setup**
+   - Copy `.env.example` to `.env.local`
+   - Fill in your API keys:
+     ```env
+     NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_key
+     CLERK_SECRET_KEY=your_clerk_secret
+     NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+     NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_key
+     GEMINI_API_KEY=your_gemini_key
+     RAPIDAPI_KEY=your_rapidapi_key
+     ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. **Run the development server**
+   ```bash
+   npm run dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+5. **Open [http://localhost:3000](http://localhost:3000)**
+
+## 🔐 Security Features
+
+- Rate limiting on API endpoints
+- Secure environment variable handling
+- File upload validation and size limits
+- Error boundaries for graceful error handling
+- Privacy-focused resume processing (files not stored)
+
+## 📱 Usage
+
+1. **Sign up/Login** using Clerk authentication
+2. **Dashboard**: View personalized learning topics and track progress
+3. **Job Search**: Search for jobs with AI-powered matching
+4. **Resume Analysis**: Upload your resume for detailed ATS analysis
+5. **Resume Builder**: Create professional resumes with multiple templates
+6. **Interview Prep**: Access curated resources for interview preparation
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Built with ❤️ for the developer community
+- Thanks to all the open-source libraries and APIs used
+- Special thanks to the YouTube creators for educational content links
+
+## 📞 Support
+
+For support or questions, reach out at: support@careercompass.com
+
+---
+
+**Note**: This is a demo application. Please ensure you have proper API keys and follow rate limits when using in production.
