@@ -5,7 +5,8 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   images: {
     unoptimized: true
-  }
+  },
+  basePath: '/Career-Compass'
 };
 
 export default nextConfig;
