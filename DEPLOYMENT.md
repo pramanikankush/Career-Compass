@@ -18,16 +18,6 @@
 4. **Set Environment Variables**
    Add these in Render dashboard:
    ```
-   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_Z2VudWluZS1sbGFtYS05My5jbGVyay5hY2NvdW50cy5kZXYk
-   CLERK_SECRET_KEY=sk_test_iMYu8N7uNEDqgjYbeyhzXx1AlUoeYolbKm6QQUKgAt
-   NEXT_PUBLIC_SUPABASE_URL=https://oxkuheoydlvzspnzmkci.supabase.co
-   NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im94a3VoZW95ZGx2enNwbnpta2NpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTY4MTg5ODgsImV4cCI6MjA3MjM5NDk4OH0.bhKVsFQY6amVFX37Y100Vqth7ZRdMy5jHyPgsc99wcQ
-   GEMINI_API_KEY=AIzaSyCE3y6yArB5tfhN-8CHMNAMv69ThToNT_o
-   SCRAPING_BEE_API_KEY=YSKMZHHSU909L3RWY9NPALYS04KEN42X7ND2UR8A95YOP0ILU7BEPLX240ZL2WEQMKK7ZA1VBYKYJ63C
-   SCRAPING_DOG_API_KEY=68b9efcc8aa5f9d7763962ef
-   RAPIDAPI_KEY=62be2f3d53msh13ae503e2ae283cp1d2ef3jsn78fe50a6e49f
-   ```
-
 5. **Deploy**
    - Click "Create Web Service"
    - Render will build and deploy automatically
