@@ -1,6 +1,9 @@
 import { NextResponse } from 'next/server'
 import { rateLimit, getClientIP } from '@/lib/rate-limiter'
 
+export const dynamic = 'force-static'
+export const revalidate = false
+
 // Diverse Indian job data with 10+ jobs per category
 const mockIndianJobs = [
   // Software Engineering (15 jobs)

@@ -2,6 +2,9 @@ import { NextRequest, NextResponse } from 'next/server'
 import { analyzeResumeWithGemini } from '@/lib/gemini'
 import { rateLimit, getClientIP } from '@/lib/rate-limiter'
 
+export const dynamic = 'force-dynamic'
+export const runtime = 'nodejs'
+
 export async function POST(request: NextRequest) {
   try {
     // Rate limiting - 3 resume analyses per minute
