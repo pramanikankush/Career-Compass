@@ -11,32 +11,11 @@ A comprehensive career development platform built with Next.js, featuring AI-pow
 - **🎯 Interview Prep** - Curated resources for technical and behavioral interviews
 - **🔐 Secure Authentication** - Powered by Clerk
 
-## 🚀 Live Demo
-
-Try the app: [Career Compass Demo](your-deployment-url)
-
-## ⚡ Quick Deploy
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/pramanikankush/Career-Compass)
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/pramanikankush/Career-Compass)
-
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/github/pramanikankush/Career-Compass)
 
 ## 🎥 Demo Video
 
 ### Watch the full demo:
-
-**Option 1: GitHub hosted video**
-```
-![Demo Video](./demo/career-compass-demo.mp4)
-```
-
-**Option 2: YouTube/Loom embed**
-[![Career Compass Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
-
-**Option 3: GIF Preview**
-![Demo GIF](./demo/career-compass-demo.gif)
+https://drive.google.com/file/d/1Ws80FJ13Tx6VgOHrHeac91dcSlphVyh_/view?usp=sharing
 
 ## 🛠️ Tech Stack
 
