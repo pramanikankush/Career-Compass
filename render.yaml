@@ -9,6 +9,4 @@ services:
     healthCheckPath: /
     envVars:
       - key: NODE_VERSION
-        value: 18.17.0
-      - key: NPM_VERSION
-        value: 9.6.7
+        value: 20.0.0
