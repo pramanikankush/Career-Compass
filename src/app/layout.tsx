@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
-import { ClerkProvider, SignedIn, SignedOut, SignInButton, SignUpButton, UserButton } from '@clerk/nextjs';
+import { ClerkProvider } from '@clerk/nextjs';
 import "./globals.css";
 
 const plusJakarta = Plus_Jakarta_Sans({
@@ -13,19 +13,25 @@ export const metadata: Metadata = {
   description: "Your AI-powered career companion for job matching, resume analysis, and career growth.",
 };
 
+const hasClerkKeys = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY && 
+  process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY !== 'your_clerk_publishable_key';
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <ClerkProvider>
-      <html lang="en">
-        <body className={`${plusJakarta.variable} font-sans antialiased bg-gray-900 text-white min-h-screen`}>
-
-          {children}
-        </body>
-      </html>
-    </ClerkProvider>
+  const content = (
+    <html lang="en">
+      <body className={`${plusJakarta.variable} font-sans antialiased bg-gray-900 text-white min-h-screen`}>
+        {children}
+      </body>
+    </html>
   );
+
+  if (hasClerkKeys) {
+    return <ClerkProvider>{content}</ClerkProvider>;
+  }
+
+  return content;
 }
