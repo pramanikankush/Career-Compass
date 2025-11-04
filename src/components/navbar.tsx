@@ -4,7 +4,7 @@ import Link from "next/link"
 import { useRouter } from "next/navigation"
 import { Search, Compass } from "lucide-react"
 import { motion } from "framer-motion"
-import { SignedIn, SignedOut, SignInButton, SignUpButton, UserButton } from '@clerk/nextjs'
+import { AuthButtons } from './auth-wrapper'
 import { useState } from "react"
 
 interface NavbarProps {
@@ -111,19 +111,7 @@ export function Navbar({ title, icon, activeLink = "Dashboard", variant = "blue"
           </button>
         </form>
         <div className="flex items-center gap-4">
-          <SignedIn>
-            <UserButton />
-          </SignedIn>
-          <SignedOut>
-            <SignInButton>
-              <button className="text-[#9eb7a8] hover:text-white font-medium transition-colors">Sign In</button>
-            </SignInButton>
-            <SignUpButton>
-              <button className="bg-[#38e07b] hover:bg-[#2bc968] text-black rounded-lg font-bold text-sm h-10 px-4 transition-colors">
-                Sign Up
-              </button>
-            </SignUpButton>
-          </SignedOut>
+          <AuthButtons />
         </div>
       </div>
     </motion.header>

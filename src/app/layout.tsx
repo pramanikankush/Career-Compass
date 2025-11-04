@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
-import { ClerkProvider } from '@clerk/nextjs';
 import "./globals.css";
 
 const plusJakarta = Plus_Jakarta_Sans({
@@ -13,8 +12,9 @@ export const metadata: Metadata = {
   description: "Your AI-powered career companion for job matching, resume analysis, and career growth.",
 };
 
-const hasClerkKeys = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY && 
-  process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY !== 'your_clerk_publishable_key';
+const hasValidClerkKeys = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY && 
+  process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY !== 'your_clerk_publishable_key' &&
+  process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY !== 'dummy_key';
 
 export default function RootLayout({
   children,
@@ -29,7 +29,8 @@ export default function RootLayout({
     </html>
   );
 
-  if (hasClerkKeys) {
+  if (hasValidClerkKeys) {
+    const { ClerkProvider } = require('@clerk/nextjs');
     return <ClerkProvider>{content}</ClerkProvider>;
   }
 
